@@ -26,48 +26,46 @@ weight = height * 2 - 1
 
 for h in range(height):
     for w in range(weight):
-        if h+w <= height-2 or w-h >= height:
+        if h + w <= height - 2 or w - h >= height:
             print(' ', end=" ")
             continue
         print('*', end=" ")
     print()
 
 # Фигура C
-height = (int(input(f"{inform}Введите высоту фигуры C:")))//2+1
+height = (int(input(f"{inform}Введите высоту фигуры C:"))) // 2 + 1
 weight = height * 2 - 1
 
 for h in range(height):
     for w in range(weight):
-        if h + w <= height-2 or w-h>=height:
+        if h + w <= height - 2 or w - h >= height:
             print(' ', end=" ")
             continue
         print('*', end=" ")
     print()
 for h in range(1, height):
     for w in range(weight):
-        if h == w or h + w == weight-1:
+        if h == w or h + w == weight - 1:
             print('*', end=" ")
             continue
         print(' ', end=" ")
     print()
 
 # Фигура D
-height = (int(input(f"{inform}Введите высоту фигуры D: ")))//2+1
+height = (int(input(f"{inform}Введите высоту фигуры D: "))) // 2 + 1
 weight = height * 2 - 1
 
 for h in range(height):
     for w in range(weight):
-        if h + w <= height-2 or w-h>=height:
+        if h + w <= height - 2 or w - h >= height:
             print(' ', end=" ")
             continue
         print('*', end=" ")
     print()
 for h in range(1, height):
     for w in range(weight):
-        if h == w or h + w == weight-1 or w == height-1:
+        if h == w or h + w == weight - 1 or w == height - 1:
             print('*', end=" ")
             continue
         print(' ', end=" ")
     print()
-
-
