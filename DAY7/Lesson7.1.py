@@ -1,6 +1,6 @@
 from random import randint
 
-a = randint(1,10000000000)
+a = randint(1, 10000000000)
 b = str(a)
 result = ""
 for i in b:
@@ -8,5 +8,3 @@ for i in b:
         result += i
 print("_______________")
 print(f"В числе {a} - {len(result)} нуля(ей)")
-
-
