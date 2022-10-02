@@ -1,6 +1,6 @@
 from random import randint
 
-my_list = [randint(1,100) for i in range(10)]
+my_list = [randint(1, 100) for i in range(10)]
 
 print(f"""Изначальный список: 
 {my_list}""")
