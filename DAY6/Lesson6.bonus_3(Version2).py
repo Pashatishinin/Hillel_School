@@ -7,5 +7,5 @@ print(f"""Изначальные списки:
 {my_list1}
 {my_list2}""")
 
-
-print(len(set(my_list1)-set(my_list2)))
+print(f"""Количество уникальных элементов одновременно в двух списках 
+{len(set(my_list1) & set(my_list2))}""")
