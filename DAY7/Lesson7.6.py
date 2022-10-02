@@ -6,4 +6,4 @@ for i in my_list:
     else:
         continue
 print("_______________")
-print(f"Сумма всех числе в этой строке равна - {total}")
+print(f"Сумма всех чисел в этой строке равна - {total}")
