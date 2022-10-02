@@ -1,6 +1,6 @@
 from random import randint
 
-a = randint(1,10000000000)
+a = randint(1, 10000000000)
 b = str(a)[-1::-1]
 result = ""
 for i in b:
