@@ -13,6 +13,6 @@ def string_count_symbol_start():
 
 
 def string_count_symbol(my_str1, my_str2):
-    new_str = list(set(my_str1).union(set(my_str2)))
-    new_str.pop(new_str.index(" "))
-    return new_str
+    new_str = set(my_str1).union(set(my_str2))
+    new_str.discard(" ")
+    return list(new_str)
