@@ -17,9 +17,10 @@ def random_name_mail_start():
 
 # Эта функция возвращает случайную строку.
 def random_counter():
-    i = 0
+    i = 1
     text = ""
-    while i <= 5:
+    count = randint(5, 7)
+    while i <= count:
         text += chr(randint(97, 122))
         i += 1
     return text
