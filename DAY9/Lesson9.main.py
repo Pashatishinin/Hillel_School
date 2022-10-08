@@ -30,4 +30,3 @@ print(f"7) {Lesson9_7.string_one_symbol_start()}")
 
 print("_______________")
 print(f"8) {Lesson9_8.random_name_mail_start()}")
-
