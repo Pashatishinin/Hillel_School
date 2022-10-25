@@ -49,7 +49,7 @@ def json_creater(filename, some: list):
     for i in some:
         dictionary[i] = lower_data.count(i)
     # Открываем доступ к файлу
-    with open("stat2.txt", "w") as file:
+    with open("stat2.txt", "a") as file:
         json.dump({filename: dictionary}, file)
 
 # Функция создающая CSV файл
@@ -70,7 +70,7 @@ def csv_creater(filename, some: list):
     for i in dictionary:
         new_dict.append({"word": i, "count": dictionary.get(i)})
     # Открываем доступ к файлу
-    with open("stat2.csv", "w", newline='') as file:
+    with open("stat2.csv", "a", newline='') as file:
         writer = csv.DictWriter(file, fieldnames=[filename + ":"])
         writer2 = csv.DictWriter(file, fieldnames=["word", "count"])
         writer.writeheader()
@@ -79,11 +79,11 @@ def csv_creater(filename, some: list):
 
 
 def main():
-    cenzor("text.txt", some_list)
-    json_creater("text.txt", some_list)
-    csv_creater("text.txt", some_list)
+    cenzor(some_text, some_list)
+    json_creater(some_text, some_list)
+    csv_creater(some_text, some_list)
 
 # Список запрещенных слов
 some_list = ['shit', 'fuck', "bitch", "sex", "niggas"]
-
+some_text = "text.txt"
 main()
