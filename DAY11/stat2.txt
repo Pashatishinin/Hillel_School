@@ -1,0 +1,1 @@
+{"text.txt": {"shit": 23, "fuck": 14, "bitch": 6, "sex": 1, "niggas": 1}}
