@@ -1,8 +1,8 @@
-def cenzor(filename, some:list):
+def cenzor(filename, some: list):
     # Открываем файл и пирсваиваем данные с этого файла переменной в виде списка
     with open(filename, 'r') as file:
         data = file.readlines()
-    #Создаем словарь с запрещенными словами
+    # Создаем словарь с запрещенными словами
     dictionary = dict.fromkeys(some, 0)
     # Проходим циклом по списку
     for j in data:
@@ -26,7 +26,7 @@ def cenzor(filename, some:list):
                 # Меняем старую строку в списке на новую(культурную) строку
                 data[find_index] = j
 
-                #Счетчик повторения слов, записываемый по ключю
+                # Счетчик повторения слов, записываемый по ключю
                 dictionary[i] += 1
 
     # Создаем новую строку
@@ -39,7 +39,3 @@ def cenzor(filename, some:list):
         file.write(new_str)
 
     return dictionary
-
-
-
-
