@@ -2,7 +2,7 @@ import json
 
 
 class ITMan:
-    #Создаем атрибуты класса
+    # Создаем атрибуты класса
     def __init__(self, firstname, lastname, age, email, skills, people_lang, coding_lang):
         self.lastname = lastname
         self.firstname = firstname
@@ -28,7 +28,9 @@ def json_creater(data_list):
     # Возвращаем значение JSON файла
     return total_data
 
-#Создаем функцию списка экземпляров класса
+# Создаем функцию списка экземпляров класса
+
+
 def total_list(total_data, append_list):
     total_data = total_data
     append_list = append_list
